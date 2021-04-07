@@ -6,7 +6,7 @@ import axios from 'axios';
 const api = axios.create ({
 
     //baseURL é uma propriedade do axios que recebe o endereço da nossa api
-    baseURL: 'http://localhost:3333'
+    baseURL: process.env.REACT_APP_URL_API
 })
 
 //exporta a conexão com a api para usar em outros locais
