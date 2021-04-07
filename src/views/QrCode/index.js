@@ -33,8 +33,9 @@ function QrCode() {
 
                 <QrCodeGenerator value="qualquer coisa que va para o celular" size={275} />
                 <span>Digite aqui a imagem que apareceu no seu celular</span>
-                <p>*Atenção: App ainda não disponível, por isso ainda não é possível passar no QrCode. Nessa versão de testes pode inserir qualquer nome de usuário no campo abaixo e depois clicar em Sincronizar.</p>
+               {/* <p>*Atenção: App ainda não disponível, por isso ainda não é possível passar no QrCode. Nessa versão de testes pode inserir qualquer nome de usuário no campo abaixo e depois clicar em Sincronizar.</p>
                 <p>*Esse nome de usuário é único, portanto, memorize o código que digitar para acessar com o mesmo usuário posteriormente e visualizar os dados armazenados para esse usuário.</p>
+               */}
                 <input type="text" onChange={e => (setMacaddressNumber(e.target.value))} value={macaddressNumber}></input>
                 <button onClick={SaveMacaddressInBrowser}>SINCRONIZAR</button>
                 </S.QrCodeArea>
